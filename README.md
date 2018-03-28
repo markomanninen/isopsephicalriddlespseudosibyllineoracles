@@ -18,6 +18,6 @@ The reader may download all material and code for the interactive exploration fr
 | **Language** | English |
 | **Published** | Published {{ config.published }} as an electronic book |
 | **Updated** | {{ gitbook.time }} |
-| **ISBN** | {{ gitbook.isbnpdf }} (PDF)<br/>{{ gitbook.isbnepub }} (EPUB)<br/>{{ gitbook.isbnmobi }} (MOBI) |
+| **ISBN** | {{ config.isbnpdf }} (PDF)<br/>{{ config.isbnepub }} (EPUB)<br/>{{ config.isbnmobi }} (MOBI) |
 | **Collection** | Open-source |
 | **Website** | [{{ config.website }}]({{ config.website }}) |
