@@ -2,7 +2,7 @@
 
 Now it is time to collect unique Greek words to the database and show
 certain specialties of the word statistics. I'm reusing data from the
-greek\_corpora variable that is in the memory already. Running the next
+`greek_corpora` variable that is in the memory already. Running the next
 code will take a minute or two depending on the processor speed of your
 computer:
 
@@ -83,19 +83,14 @@ display_html(words.to_html(index=False), raw=True)
 
 Total records: 833817
 
-+-------+-----------+---------+
+
 | Word  | Count     | Percent |
-+=======+===========+=========+
+|-----------------------------|
 | > ΚΑΙ | > 1781528 | > 5.38  |
-+-------+-----------+---------+
 | > ΔΕ  | > 778589  | > 2.35  |
-+-------+-----------+---------+
 | > ΤΟ  | > 670952  | > 2.03  |
-+-------+-----------+---------+
 | > ΤΩΝ | > 487015  | > 1.47  |
-+-------+-----------+---------+
 | > Η   | > 483372  | > 1.46  |
-+-------+-----------+---------+
 
 `KAI`, the word denoting
 [and-conjuction](http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry=kai/1)[^20],
