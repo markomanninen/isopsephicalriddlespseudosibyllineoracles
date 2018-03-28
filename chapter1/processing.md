@@ -1,4 +1,4 @@
-# Natural language processing
+## Natural language processing
 
 Programmatical approach to solve the riddles requires huge Greek text
 corpora. Bigger it is, the better. I will download and preprocess
@@ -39,3 +39,5 @@ results](https://)[^10].
 You may also run code directly from [Python
 shell](https://www.python.org/shell/) environment, no problem.
 :::
+
+{% include 'footnotes.md' %}

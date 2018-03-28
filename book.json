@@ -11,9 +11,9 @@
     "website": "http://riddles.flowerofliferesearch.com",
     "keywords": "",
     "language": "en",
-    "totalpages": 108,
-    "hidepageheaders": [2, 3, 10, 40, 107, 108],
-    "hidepagefooters": [2, 3, 10, 40, 107, 108],
+    "totalpages": 27,
+    "hidepageheaders": [1, 2, 3, 4, 11, 14, 26, 27],
+    "hidepagefooters": [1, 2, 3, 4, 11, 14, 26, 27],
     "plugins": ["regexplace", "ga"],
     "pluginsConfig": {
         "_addcssjs": {

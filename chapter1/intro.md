@@ -1,6 +1,6 @@
-# Processing Greek corpora for the riddle solver
+## Processing Greek corpora for the riddle solver
 
-## Pseudo-Sibylline oracles
+### Pseudo-Sibylline oracles
 
 Pseudo-Sibylline oracles<!-- cite author="wikipedia.org" title="Sibylline oracles"
 date="" location="" type="website" href="https://en.wikipedia.org/wiki/Sibylline_Oracles" -->
@@ -38,7 +38,7 @@ author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and
 Its Social Setting" date="2003" location="Part 1" type="book"
 href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> by Rieuwerd Buitenwerf
 
-## Focus of the study
+### Focus of the study
 
 Some material in the Pseudo-Sibylline oracles contains cryptic puzzles,
 referring to persons, cities, countries, and epithets of God for example. These
@@ -58,3 +58,5 @@ provide a reusable and a testable method for processing and analyzing ancient
 corpora, especially detecting alphanumeric patterns in text. Although the
 target language in this study is Ancient Greek, the method should be applicable
 to any language using alphabetic numerals.
+
+{% include 'footnotes.md' %}

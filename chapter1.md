@@ -1,4 +1,0 @@
-# Processing Greek corpora for the riddle solver
-
-...
-
