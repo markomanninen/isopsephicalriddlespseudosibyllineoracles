@@ -24,18 +24,17 @@ were mostly grounded in Jewish tradition, but surprisingly some pagan world
 events also came to be interpreted as signs of the coming Messiah. Sibyl, the
 acclaimed author of the prophecies as a woman prophetess, the daughter of Noah
 in the Pseudo-Sibylline lore, has a unique character crossing over the common
-borders in several ancient religions and mythology.
+borders in several ancient religions and mythology<!-- cite author="Julia E. Diggins" title="String, Straightedge, and Shadow" date="1965" location="Chapter 8" type="book" href="http://www.anselm.edu/homepage/dbanach/thales.htm" -->.
 
 Good introductions to the Pseudo-Sibylline oracles can be found from these two
 books:
 
-* Sibylline Oracles in "The Old Testament Pseudepigrapha, Volume I"<!-- cite
-author="J. J. Collins" title="Sibylline Oracles in The Old Testament
-Pseudepigrapha, Volume I" date="2011" location="Pages 317-472" type="book"
+* Sibylline Oracles in "The Old Testament Pseudepigrapha, Volume I"<!-- cite author="J. J. Collins"
+title="Sibylline Oracles in The Old Testament Pseudepigrapha, Volume I"
+date="2011" location="Pages 317-472" type="book"
 href="https://books.google.fi/books?id=TNdeolWctsQC" --> by J. J. Collins
-* Part 1 in "The Book Three of the Sibylline Oracles and Its Social Setting"<!-- cite
-author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and
-Its Social Setting" date="2003" location="Part 1" type="book"
+* Part 1 in "The Book Three of the Sibylline Oracles and Its Social Setting"<!-- cite author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and Its Social Setting"
+date="2003" location="Part 1" type="book"
 href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> by Rieuwerd Buitenwerf
 
 ### Focus of the study
