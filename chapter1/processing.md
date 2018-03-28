@@ -58,7 +58,6 @@ install line in the Jupyter notebook:
 
 ```python
 import sys
-
 #!{sys.executable} -m pip install tqdm abnum pandas plotly greek_accentuation
 ```
 
@@ -93,7 +92,7 @@ the same directory with the Jupyter notebook or where Python is
 optionally run in shell mode. Zip files must then be renamed as
 `perseus.zip` and `first1k.zip`.
 
-1. Download packed zip files from their GitHub repositories:
+1\. Download packed zip files from their GitHub repositories:
 
 ```python
 from functions import download_with_indicator, perseus_zip_file, first1k_zip_file
@@ -114,7 +113,7 @@ Downloading: https://github.com/OpenGreekAndLatin/First1KGreek/archive/master.zi
 195.00MB [09:15, 201.54KB/s]
 ```
 
-2. Unzip files to the corresponding directories:
+2\. Unzip files to the corresponding directories:
 
 ```python
 from functions import perseus_zip_dir, first1k_zip_dir, unzip
@@ -123,8 +122,8 @@ unzip(perseus_zip_file, perseus_zip_dir)
 unzip(first1k_zip_file, first1k_zip_dir)
 ```
 
-3. Copy only suitable Greek text xml files from `perseus\_zip\_dir` and
-`first1k\_zip\_dir` to the temporary work directories. Original
+3\. Copy only suitable Greek text xml files from `perseus_zip_dir` and
+`first1k_zip_dir` to the temporary work directories. Original
 repositories contain a lot of unnecessary files for the riddle solver
 which are skipped in this process.
 
@@ -141,20 +140,18 @@ for item in [[joinpaths(perseus_zip_dir,
 Output:
 
 ```
-greek_text_perseus_tmp already exists. Either remove it and run again, or
-just use the old one.
+greek_text_perseus_tmp already exists. Either remove it and run again, or just use the old one.
 
 Copying greek_text_first1k_tmp -> greek_text_first1k
 ```
 
-Depending on if the files have been downloaded already, the output may
-differ.
+Depending on if the files have been downloaded already, the output may differ.
 
 ### Collecting files
 
 When the files has been downloaded and copied, it is time to read them
 to the RAM (Random-Access Memory). At this point file paths are
-collected to the greek\_corpora\_x variable that is used on later
+collected to the `greek_corpora_x` variable that is used on later
 iterators.
 
 ```python
@@ -198,7 +195,7 @@ didn't even use spaces to denote individual words and phrases.
 Next code execution will take several minutes depending on if you have
 already run it once and have the previous temporary directories
 available. Old processed corpora files are removed first, then they are
-recreated by calling process\_greek\_corpora function.
+recreated by calling `process_greek_corpora` function.
 
 ```python
 from functions import remove, all_greek_text_file, perseus_greek_text_file,\
