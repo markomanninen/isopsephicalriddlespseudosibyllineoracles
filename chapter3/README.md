@@ -1,0 +1,3 @@
+# Study of the results of the riddle solver
+
+...
