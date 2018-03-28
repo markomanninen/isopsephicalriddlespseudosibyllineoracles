@@ -3,7 +3,7 @@
 After the files have been downloaded and preprocessed, I'm going to
 output the size of them:
 
-``` {.sourceCode .python}
+```python
 from functions import get_file_size
 
 print("Size of the all raw text: %s MB" % get_file_size(all_greek_text_file))
@@ -13,7 +13,7 @@ print("Size of the first1k raw text: %s MB" % get_file_size(first1k_greek_text_f
 
 Output:
 
-``` {.sourceCode .txt}
+```
 Size of the all raw text: 347.76 MB
 Size of the perseus raw text: 107.41 MB
 Size of the first1k raw text: 240.35 MB
@@ -22,7 +22,7 @@ Size of the first1k raw text: 240.35 MB
 Then, I will calculate other statistics of the saved text files to
 compare their content:
 
-``` {.sourceCode .python}
+```python
 from functions import get_stats
 
 ccontent1, chars1, lwords1 = get_stats(perseus_greek_text_file)
@@ -32,7 +32,7 @@ ccontent3, chars3, lwords3 = get_stats(all_greek_text_file)
 
 Output:
 
-``` {.sourceCode .txt}
+```
 Corpora: perseus_greek_text_files.txt
 Letters: 51411752
 Words in total: 9900720
@@ -60,7 +60,7 @@ the Greek alphabet.
 
 This will take some time to process too:
 
-``` {.sourceCode .python}
+```python
 from functions import Counter, DataFrame
 # perseus dataframe
 df = DataFrame([[k, v] for k, v in Counter(ccontent1).items()])
@@ -80,7 +80,7 @@ The first column is the letter, the second column is the count of the
 letter, and the third column is the percentage of the letter contra all
 letters.
 
-``` {.sourceCode .python}
+```python
 from functions import display_side_by_side
 # show tables side by side to save some vertical space
 display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
@@ -153,7 +153,7 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 +-----------------------+-----------------------+-----------------------+
 | > Ϟ 3 0.00            | > Ϟ 111 0.00          | > Ϟ 114 0.00          |
 +-----------------------+-----------------------+-----------------------+
-| > 0 0.00              | > Ϙ 13 0.00           | > Ϙ 13 0.00           |
+| >                     | > Ϙ 13 0.00           | > Ϙ 13 0.00           |
 +-----------------------+-----------------------+-----------------------+
 
 Greek corpora contains mathematical texts in Greek, which explains why
@@ -168,17 +168,17 @@ the included text genres in corpora.
 The next chart will show visually which are the most used letters and
 the least used letters in the available Ancient Greek corpora.
 
-![image](stats.png)
+![image](./media/stats.png)
 
-Vowels with N, S, and T consonants pops up as the most used letters. The
-least used letters are Ζ, Ξ, and Ψ, if the exclusive numerals Ϛ, Ϟ, and
-Ϡ are not counted.
+Vowels with `N`, `S`, and `T` consonants pops up as the most used letters. The
+least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϛ`, `Ϟ`,
+`Ϙ`, and `Ϡ` are not counted.
 
 #### Optional live chart
 
 Uncomment the next part to output a new fresh graph from Plotly:
 
-``` {.sourceCode .python}
+```python
 #import plotly
 #plotly.offline.init_notebook_mode(connected=False)
 

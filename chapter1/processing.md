@@ -74,7 +74,7 @@ Python 3.6.1 | Anaconda 4.4.0 (64-bit) | (default, May 11 2017, 13:25:24)
 [MSC v.1900 64 bit (AMD64)]
 ```
 
-Note, that Python 3.4+ is required for all examples to work properly. To
+Note that Python 3.4+ is required for all examples to work properly. To
 find out other ways of installing PyPI maintained libraries, please
 consult: https://packaging.python.org/tutorials/installing-packages/
 
