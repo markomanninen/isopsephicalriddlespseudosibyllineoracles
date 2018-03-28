@@ -27,8 +27,8 @@ borders in several ancient religions and mythology.
 Good introductions to the Pseudo-Sibylline oracles can be found from these two
 books:
 
-* Sibylline Oracles in "The Old Testament Pseudepigrapha, Volume I"<!-- cite author="J. J. Collins" title="Sibylline Oracles in The Old Testament Pseudepigrapha, Volume I" date="2011" location="Pages 317-472" type="book" href="https://books.google.fi/books?id=TNdeolWctsQC" --> by J. J. Collins
-* Part 1 in "The Book Three of the Sibylline Oracles and Its Social Setting"<!-- cite author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and Its Social Setting" date="2003" location="Part 1" type="book" href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> by Rieuwerd Buitenwerf
+* Sibylline Oracles in "_The Old Testament Pseudepigrapha, Volume I_"<!-- cite author="J. J. Collins" title="Sibylline Oracles in The Old Testament Pseudepigrapha, Volume I" date="2011" location="Pages 317-472" type="book" href="https://books.google.fi/books?id=TNdeolWctsQC" --> by J. J. Collins
+* Part 1 in "_The Book Three of the Sibylline Oracles and Its Social Setting_"<!-- cite author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and Its Social Setting" date="2003" location="Part 1" type="book" href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> by Rieuwerd Buitenwerf
 
 ### Focus of the study
 
