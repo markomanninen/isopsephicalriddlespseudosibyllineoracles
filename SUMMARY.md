@@ -16,7 +16,7 @@
     * Biggest isopsephical value
     * Word frequency
     * Detect source texts
-* [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2)
+* [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/README.md)
 * [Study of the results of the riddle solver](./chapter3/README.md)
 * [References](references.md)
 * [Tools](tools.md)
