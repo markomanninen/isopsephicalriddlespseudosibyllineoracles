@@ -1,6 +1,6 @@
 # Summary
 
-* [Introduction](README.md)
+* [Alphanumeric Riddles of Ancient Greeks](README.md)
 * [Processing Greek corpora for the riddle solver](./chapter1/index.md)
   * [Pseudo-Sibylline oracles](./chapter1/intro.md)
   * [Natural language processing](./chapter1/processing.md)
