@@ -20,11 +20,12 @@ Size of the first1k raw text: 240.35 MB
 ```
 
 Then, I will calculate other statistics of the saved text files to
-compare their content:
+compare their content. By passing text file name, e.g. `perseus_greek_text_file`
+to the `get_stats` function, statistical variables are returned and at the same
+time their values are printed:
 
 ```python
 from functions import get_stats
-
 ccontent1, chars1, lwords1 = get_stats(perseus_greek_text_file)
 ccontent2, chars2, lwords2 = get_stats(first1k_greek_text_file)
 ccontent3, chars3, lwords3 = get_stats(all_greek_text_file)
@@ -51,9 +52,9 @@ Unique words: 831308
 
 ### Letter statistics
 
-I'm using DataFrame class from Pandas library to handle tabular data
+I'm using `DataFrame` class from Pandas library to handle tabular data
 and show basic letter statistics for each corpora and combination of
-them. Native Counter class in Python is used to count unique elements in
+them. Native `Counter` class in Python is used to count unique elements in
 the given sequence. Sequence in this case is the raw Greek text stripped
 from all special characters and spaces, and elements are the letters of
 the Greek alphabet.

@@ -6,7 +6,7 @@ greek\_corpora variable that is in the memory already. Running the next
 code will take a minute or two depending on the processor speed of your
 computer:
 
-``` {.sourceCode .python}
+```python
 from functions import syllabify, Abnum, greek, vowels
 # greek abnum object for calculating isopsephical value of the words
 g = Abnum(greek)
@@ -47,7 +47,7 @@ the riddle solver. After this you may proceed to the [riddle
 solver](https://git.io/vASrY) Jupyter notebook document in interactive
 mode, if you prefer.
 
-``` {.sourceCode .python}
+```python
 from functions import csv_file_name
 # save dataframe to CSV file
 df.to_csv(csv_file_name, header=False, index=False, encoding='utf-8')
@@ -68,7 +68,7 @@ For a confirmation of the succesful task, I will show the total number
 of the unique words, and five of the most repeated words in the
 database:
 
-``` {.sourceCode .python}
+```python
 # import display html helper function
 from functions import display_html
 # sort and limit words, select columns by index 1, 2, and 3
@@ -97,10 +97,10 @@ Total records: 833817
 | > Η   | > 483372  | > 1.46  |
 +-------+-----------+---------+
 
-KAI, the word denoting
+`KAI`, the word denoting
 [and-conjuction](http://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.04.0057:entry=kai/1)[^20],
 is well known as the most repeated word in the Ancient Greek. Above
-statistics says that KAI word takes almost 5.4% of the all words.
+statistics says that `KAI` word takes almost 5.4% of the all words.
 
 This can be explained easily because KAI serves for many fundamental
 functions in text, such as an indicator of a new chapter or a paragraph,
@@ -115,7 +115,7 @@ list processing features of the Ancient Greek rhetorics to the modern
 LISP language or similar programming paradigm, but that is definitely
 beyond the scope of the investigation of this study.
 
-Naturally, articles and particles (ΤΟ, ΤΩΝ) belong to the most repeated
+Naturally, articles and particles (`ΤΟ`, `ΤΩΝ`) belong to the most repeated
 words as well. One could use the knowledge of the certain word rate as
 one of the indicators of the text genre, or even quess the author of the
 text.
@@ -124,7 +124,7 @@ text.
 
 For a curiosity, let's also see the longest words in the database:
 
-``` {.sourceCode .python}
+```python
 from functions import HTML
 # load result to the temporary variable for later usage
 # sort by length, limit to 20 items
@@ -191,7 +191,7 @@ So, which words have the biggest isopsephical value in the database? We
 can find it out by sorting words database by the fourth column, that is
 the isopsephical value of the word.
 
-``` {.sourceCode .python}
+```python
 # sort by the isopsephy column and get the first 20 items
 m = df.sort_values(4, ascending=False).head(n=20)
 # select columns by indices
@@ -251,7 +251,7 @@ but as it can be seen, the longest and the biggest isopsephical words
 are just partly overlapping. Isopsephical value of the word is not
 depending of the length of the word, but it is depending on the fact,
 how many times the latter part of the letters in the alphabet occus in
-the word. In ΛΕΟΝΤΑΤΥΦΛΩΣΩΝΣΚΩΛΩΨΔΕΤΟΥ letters Τ, Φ, Ω, and Σ are
+the word. In `ΛΕΟΝΤΑΤΥΦΛΩΣΩΝΣΚΩΛΩΨΔΕΤΟΥ` letters `Τ`, `Φ`, `Ω`, and `Σ` are
 repeated several times so that the sum of the alphabetic numerals in the
 word, i.e. the isopsephical value, is 6865. The value gap between the
 first and the second word is rather big. Results like these are
@@ -270,7 +270,7 @@ times only. Thus, it is relevant to ask, how many percent of the whole
 word base, the least repeated words actually take? For the task I'm
 using groupby and count methods of the Dataframe object in Pandas.
 
-``` {.sourceCode .python}
+```python
 # length of the words database. taken to a variable to prevent unnecessary
 # repeatition in the next for loop
 le = len(df)
@@ -281,7 +281,7 @@ for x, y in df.groupby([1, 2]).count()[:10].T.items():
 
 Output:
 
-``` {.sourceCode .txt}
+```
 words repeating 1 time(s):  44.95 %
 words repeating 2 time(s):  15.86 %
 words repeating 3 time(s):  7.48 %
@@ -311,7 +311,7 @@ find the code from functions.py and alter it for your use.
 
 #### Longest words
 
-``` {.sourceCode .python}
+```python
 from functions import search_words_from_corpora
 # I'm collecting the plain text words from the already instantiated l variable
 words = list(y[0] for x, y in l.T.items())
@@ -320,7 +320,7 @@ search_words_from_corpora(words, [perseus_dir, first1k_dir])
 
 Output:
 
-``` {.sourceCode .txt}
+```
 + Aristophanes, Lysistrata (tlg0019.tlg007.perseus-grc2.xml) =>
 
 ----- ΣΠΕΡΜΑΓΟΡΑΙΟΛΕΚΙΘΟΛΑΧΑΝΟΠΩΛΙΔΕΣ (1) -----
@@ -423,7 +423,7 @@ also filled with long compoud words for fractions for example.
 
 #### Highest isopsephy
 
-``` {.sourceCode .python}
+```python
 # I'm collecting the plain text words from the already instantiated m variable
 words = list(y[0] for x, y in m.T.items())
 search_words_from_corpora(words, [perseus_dir, first1k_dir])
@@ -431,7 +431,7 @@ search_words_from_corpora(words, [perseus_dir, first1k_dir])
 
 Output:
 
-``` {.sourceCode .txt}
+```
 + Appian, TheCivilWars (tlg0551.tlg017.perseus-grc2.xml) =>
 
 ----- ΣΥΝΥΠΟΧΩΡΟΥΝΤΩΝ (1) -----
