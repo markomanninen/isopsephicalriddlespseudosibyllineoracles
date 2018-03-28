@@ -14,8 +14,22 @@
     "totalpages": 27,
     "hidepageheaders": [1, 2, 3, 4, 11, 14, 26, 27],
     "hidepagefooters": [1, 2, 3, 4, 11, 14, 26, 27],
-    "plugins": ["regexplace", "ga"],
+    "plugins": ["regexplace", "autocover"],
     "pluginsConfig": {
+        "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        },
         "_addcssjs": {
             "js": ["//cdn.mathjax.org/mathjax/2.5-latest/MathJax.js?config=TeX-AMS-MML_SVG",
                    "//code.jquery.com/jquery-2.1.4.min.js",

@@ -21,19 +21,19 @@ the naturally written language corpora. Then words can be further used
 in the riddle solver in the second chapter.
 
 <!-- note -->
-Note that rather than just reading, this, and the following chapters can also be
+<p>Note that rather than just reading, this, and the following chapters can also be
 run interactively in your local [Jupyter notebook](https://jupyter.org/)[^7]
 installation if you prefer. That means that you may test and verify the
 procedure or alter parameters and try solving the riddles with your own
-parameters.
+parameters.</p>
 
-Your can download independent Jupyter notebooks for
+<p>Your can download independent Jupyter notebooks for
 [processing corpora](https://git.io/vASwM)[^8],
 [solving riddles](https://git.io/vASrY) [^9], and
-[analysing results](https://)[^10].
+[analysing results](https://)[^10].</p>
 
-You may also run code directly from [Python shell](https://www.python.org/shell/)
-environment, no problem.
+<p>You may also run code directly from [Python shell](https://www.python.org/shell/)
+environment, no problem.</p>
 <!-- endnote -->
 
 {% include 'footnotes.md' %}
