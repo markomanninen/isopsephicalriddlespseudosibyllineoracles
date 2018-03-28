@@ -6,3 +6,18 @@ In the first chapter, I will download and preprocess freely available open sourc
 
 The reader may download all material and code for the interactive exploration from the GitHub project: [https://github.com/markomanninen/grcriddles](https://github.com/markomanninen/grcriddles)
 
+*Isopsephical Riddles in the Pseudo-Sibylline Oracles* electronic book is published in four different formats: [Online]({{ config.website }}/), [PDF](http://www.gitbook.com/download/pdf/book/markomanninen/isopsephical-riddles-pseudo-sibylline-oracles), [EPUB](http://www.gitbook.com/download/epub/book/markomanninen/isopsephical-riddles-pseudo-sibylline-oracles), and [MOBI](http://www.gitbook.com/download/mobi/book/markomanninen/isopsephical-riddles-pseudo-sibylline-oracles)
+
+| *Meta* | *Data* |
+| -- | -- |
+| **Title** | {{ config.title }} |
+| **Author** | {{ config.author }} |
+| **Pages** | {{ config.totalpages }} (PDF) |
+| **Description** | Pythonic alpha-numerical riddle solver applied to the Pseudo-Sibylline oracles written in Greek heroic hexameters |
+| **Keywords** | {{ config.keywords }} |
+| **Language** | English |
+| **Published** | Published {{ config.published }} as an electronic book |
+| **Updated** | {{ gitbook.time }} |
+| **ISBN** | {{ gitbook.isbnpdf }} (PDF)<br/>{{ gitbook.isbnepub }} (EPUB)<br/>{{ gitbook.isbnmobi }} (MOBI) |
+| **Collection** | Open-source |
+| **Website** | [{{ config.website }}]({{ config.website }}) |
