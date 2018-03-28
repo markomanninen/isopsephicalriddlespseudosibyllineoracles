@@ -91,11 +91,7 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 +-----------------------+-----------------------+-----------------------+
 | Perseus               | FirstK1               | Both                  |
 +=======================+=======================+=======================+
-| > Letter Count        | > Letter Count        | > Letter Count        |
-| > Percent             | > Percent             | > Percent             |
-+-----------------------+-----------------------+-----------------------+
-| ========= =========   | ========= =========   | ========= =========   |
-| =========             | =========             | =========             |
+| > Char Count Percent  | > Char Count Percent  | > Char Count Percent  |
 +-----------------------+-----------------------+-----------------------+
 | > Α 4182002 10.96     | > Α 26817705 10.76    | > Α 30999707 10.79    |
 +-----------------------+-----------------------+-----------------------+
@@ -156,38 +152,22 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 | >                     | > Ϙ 13 0.00           | > Ϙ 13 0.00           |
 +-----------------------+-----------------------+-----------------------+
 
-Greek corpora contains mathematical texts in Greek, which explains why
-the rarely used digamma (Ϝ/Ϛ = 6), qoppa (Ϟ/Ϙ = 90), and sampi (Ϡ = 900)
-letters are included on the table. You can find other interesting
-differences between Perseus and First1k corpora, like the occurrence of
-Ρ/Η, K/Π, and Ο/Ι/Ε which are probably explained by the difference of
-the included text genres in corpora.
+Greek corpora contains mathematical texts in Greek, which explains why the
+rarely used digamma (`Ϝ`/`Ϛ` = 6), qoppa (`Ϟ`/`Ϙ` = 90), and sampi (`Ϡ` = 900)
+letters are included on the table. You can find other interesting differences
+between Perseus and First1k corpora, like the occurrence of `Ρ`/`Η`, `K`/`Π`,
+and `Ο`/`Ι`/`Ε` which are probably explained by the difference of the included
+text genres in corpora.
 
 #### Bar chart
 
 The next chart will show visually which are the most used letters and
 the least used letters in the available Ancient Greek corpora.
 
-![image](./media/stats.png)
+![Letter statistics](/media/stats.png)
 
 Vowels with `N`, `S`, and `T` consonants pops up as the most used letters. The
-least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϛ`, `Ϟ`,
-`Ϙ`, and `Ϡ` are not counted.
-
-#### Optional live chart
-
-Uncomment the next part to output a new fresh graph from Plotly:
-
-```python
-#import plotly
-#plotly.offline.init_notebook_mode(connected=False)
-
-# for the fist time set plotly service credentials, then you can comment
-# next line
-#plotly.tools.set_credentials_file(username='MarkoManninen', api_key='xyz')
-
-# embed plotly graphs
-#plotly.tools.embed("https://plot.ly/~MarkoManninen/8/")
-```
+least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϝ`, `Ϛ`,
+`Ϟ`, `Ϙ`, and `Ϡ` are not counted.
 
 {% include 'footnotes.md' %}
