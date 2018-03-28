@@ -60,7 +60,7 @@ statistics.
 You can install these libraries by uncommenting and running the next
 install lines in the Jupyter notebook:
 
-``` {.sourceCode .python}
+```
 import sys
 
 #!{sys.executable} -m pip install tqdm abnum
@@ -70,13 +70,13 @@ import sys
 
 For your convenience, my environment is the following:
 
-``` {.sourceCode .python}
+```
 print("Python %s" % sys.version)
 ```
 
 Output:
 
-``` {.sourceCode .txt}
+```
 Python 3.6.1 | Anaconda 4.4.0 (64-bit) | (default, May 11 2017, 13:25:24)
 [MSC v.1900 64 bit (AMD64)]
 ```
