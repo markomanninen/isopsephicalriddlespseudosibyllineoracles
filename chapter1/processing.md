@@ -53,6 +53,8 @@ library is used as an API (application programming interface) to the collected
 database. Plotly<!-- cite author="plot.ly" title="Plotly data visualization" date="" location="" type="website" href="https://plot.ly/" --> library and online infographic
 service are used for the visual presentation of the statistics.
 
+#### Installation
+
 You can install these libraries by uncommenting and running the next
 install line in the Jupyter notebook:
 
@@ -163,7 +165,7 @@ print(len(greek_corpora_x), "files found")
 
 Output:
 
-```
+```txt
 1705 files found
 ```
 
@@ -175,14 +177,14 @@ by voluteer contributors.
 
 Next step is to extract Greek content from the downloaded and selected
 XML source files. Usually this task might take a lot of effort in NLP
-(natural language processing). Python [NLTK](https://www.nltk.org/)[^17]
-and [CLTK](https://github.com/cltk/cltk)[^18] libraries would be useful
+(Natural Language Processing). Python NLTK<!-- cite author="nltk.org" title="NLTK - Natural Language ToolKit" date="" location="" type="website" href="https://www.nltk.org/" -->
+and CLTK<!-- cite author="cltk.org" title="CLTK - The Classical Language ToolKit" date="" location="" type="website" href="https://github.com/cltk/cltk" --> libraries would be useful
 at this point, but in my case I'm only interested of Greek words, that
-is, text content encoded by a certain [Greek Unicode
-letter](https://en.wikipedia.org/wiki/Greek_alphabet#Greek_in_Unicode)[^19]
-block. Thus, I'm able to simplify this part by removing all other
-characters from source files except Greek characters. Again, details can
-be found from the [functions.py](https://git.io/vAS2Z) script.
+is, text content encoded by a certain Greek Unicode
+letter block<!-- cite author="wikipedia.org" title="Greek in Unicode" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Greek_alphabet#Greek_in_Unicode" -->. Thus,
+I'm able to simplify this part by removing all other characters from source
+files except Greek characters. Again, details can be found from the
+`functions.py` script.
 
 Extracted content is saved to the corpora/author/work based directories.
 Simplified uncial conversion is also made at the same time so that the
