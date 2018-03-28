@@ -1,23 +1,12 @@
 # Summary
 
 * [Introduction](README.md)
-* [Processing Greek corpora for the riddle solver](chapter1.md)
-  * Natural language processing
-    * Required components
-    * Downloading corpora
-    * Collecting files
-    * Processing files
-  * Statistics
-    * Letter statistics
-  * Unique words database
-    * Store database
-    * Most repeated words
-    * Longest words
-    * Biggest isopsephical value
-    * Word frequency
-    * Detect source texts
-* [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/README.md)
-* [Study of the results of the riddle solver](./chapter3/README.md)
+* [Processing Greek corpora for the riddle solver](./chapter1/index.md)
+  * [Natural language processing](./chapter1/processing.md)
+  * [Statistics](./chapter1/statistics.md)
+  * [Unique words database](./chapter1/uniquewords.md)
+* [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/index.md)
+* [Study of the results of the riddle solver](./chapter3/index.md)
 * [References](references.md)
 * [Tools](tools.md)
 * [Credits](credits.md)
