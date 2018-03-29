@@ -9,6 +9,7 @@
   * [Unique words database](./chapter1/uniquewords.md)
     * [Store database](./chapter1/uniquewords.md)
 * [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/index.md)
+  * [Introduction](./chapter2/intro.md)
 * [Study of the results of the riddle solver](./chapter3/index.md)
 * [References](references.md)
 * [Tools](tools.md)
