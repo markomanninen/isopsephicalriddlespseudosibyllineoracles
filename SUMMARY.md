@@ -5,7 +5,7 @@
   * [Pseudo-Sibylline oracles](./chapter1/intro.md)
   * [Natural language processing](./chapter1/processing.md)
   * [Statistics](./chapter1/statistics.md)
-    * [Letters](./chapter1/statistics.md#letters)
+    * [Letters](./chapter1/statistics.md)
   * [Unique words database](./chapter1/uniquewords.md)
     * [Store database](./chapter1/uniquewords.md#store-database)
 * [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/index.md)
