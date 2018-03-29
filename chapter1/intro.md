@@ -43,7 +43,7 @@ for better proposals. Better yet, few of these open riddles are more complex and
 specific enough so that one may try to solve them by modern programmable tools.
 
 As an independent researcher not associated or affiliated with any organization,
-the sole motivation and purpose of mine in the chapters is to provide a reusable
+the sole motivation and purpose of mine in the this book is to provide a reusable
 and a testable method for processing and analyzing ancient corpora, especially
 detecting alphanumeric patterns in text. Although the target language in this
 study is Ancient Greek, the method should be applicable to any language using

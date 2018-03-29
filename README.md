@@ -1,8 +1,8 @@
 # Alphanumeric Riddles of Ancient Greeks
 
-In the following chapters in this book, I'm guiding reader through the process of solving some enigmatic alphanumeric riddles in the Greek Pseudo-Sibylline oracles.
+In the following chapters in this book, I'm guiding the reader through the process of solving enigmatic alphanumeric riddles in the Greek Pseudo-Sibylline oracles.
 
-In the first chapter, I will download and preprocess freely available open source Greek corpora. In the second chapter, I will use the processed unique word database to solve some specific riddles in the Sibylline oracles. The third chapter is reserved more for the speculative analysis of the results.
+In the first chapter, I will download and preprocess the freely available open source Greek corpora to create a word database. In the second chapter, I will use the processed unique word database to solve some specific riddles in the Sibylline oracles. The third chapter is reserved for the more speculative analysis of the results.
 
 The reader may download all material and code for the interactive exploration from the GitHub project: [https://github.com/markomanninen/grcriddles](https://github.com/markomanninen/grcriddles)
 
