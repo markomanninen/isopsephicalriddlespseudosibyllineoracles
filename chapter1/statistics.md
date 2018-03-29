@@ -1,7 +1,7 @@
 ## Statistics
 
-After the files have been downloaded and preprocessed, I'm going to
-output the size of them:
+After the files have been downloaded and preprocessed, I'm going to output the
+size of them with the help of the `get_file_size` function:
 
 ```python
 from functions import get_file_size
@@ -19,7 +19,8 @@ Size of the perseus raw text: 107.41 MB
 Size of the first1k raw text: 240.35 MB
 ```
 
-Then, I will calculate other statistics of the saved text files to
+Size may differ depending on the latest size of the downloaded and processed
+corpora. Then, I will calculate other statistics of the saved text files to
 compare their content. By passing text file name, e.g. `perseus_greek_text_file`
 to the `get_stats` function, statistical variables are returned and at the same
 time their values are printed:
@@ -50,7 +51,7 @@ Words in total: 32985165
 Unique words: 831308
 ```
 
-### Letter statistics
+### Letters
 
 I'm using `DataFrame` class from Pandas library to handle tabular data
 and show basic letter statistics for each corpora and combination of
@@ -89,7 +90,7 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 
 #### Table data
 
-| Perseus               ||| FirstK1              ||| Both                    |
+| <td colspan=3>Perseus   | <td colspan=3>FirstK1  | <td colspan=3>Both      |
 |----------------------------------------------------------------------------|
 | Char | Count | Percent  | Char | Count | Percent | Char | Count | Percent  |
 |----------------------------------------------------------------------------|
