@@ -5,7 +5,6 @@ size of them with the help of the `get_file_size` function:
 
 ```python
 from functions import get_file_size
-
 print("Size of the all raw text: %s MB" % get_file_size(all_greek_text_file))
 print("Size of the perseus raw text: %s MB" % get_file_size(perseus_greek_text_file))
 print("Size of the first1k raw text: %s MB" % get_file_size(first1k_greek_text_file))

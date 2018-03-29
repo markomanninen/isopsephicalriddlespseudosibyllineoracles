@@ -84,8 +84,8 @@ the least used letters in the available Ancient Greek corpora.
 
 ![Letter statistics](/media/stats.png)
 
-Vowels with `N`, `S`, and `T` consonants pops up as the most used letters. The
-least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϝ`, `Ϛ`,
-`Ϟ`, `Ϙ`, and `Ϡ` are not counted.
+Short vowels with `N`, `S`, and `T` consonants pops up as the most used letters.
+The least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϝ`,
+`Ϛ`, `Ϟ`, `Ϙ`, and `Ϡ` are not counted.
 
 {% include 'footnotes.md' %}
