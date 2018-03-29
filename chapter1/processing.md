@@ -53,10 +53,10 @@ library is used as an API (application programming interface) to the collected
 database. Plotly<!-- cite author="plot.ly" title="Plotly data visualization" date="" location="" type="website" href="https://plot.ly/" --> library and online infographic
 service are used for the visual presentation of the statistics.
 
-#### Installation
+### Installation
 
-You can install these libraries by uncommenting and running the next
-install line in the Jupyter notebook:
+You can install these libraries by uncommenting and running the next install
+line in the Jupyter notebook:
 
 ```python
 import sys
@@ -76,25 +76,25 @@ Python 3.6.1 | Anaconda 4.4.0 (64-bit) | (default, May 11 2017, 13:25:24)
 [MSC v.1900 64 bit (AMD64)]
 ```
 
-Note that Python 3.4+ is required for all examples to work properly. To
-find out other ways of installing PyPI maintained libraries, please
-consult: https://packaging.python.org/tutorials/installing-packages/
+Note that Python 3.4+ is required for all examples to work properly. To find out
+other ways of installing PyPI maintained libraries, please consult:
+https://packaging.python.org/tutorials/installing-packages/
 
 ### Downloading corpora
 
 I'm going to use Perseus and OpenGreekAndLatin corpora for the study by
 combining them into a single raw text file and unique words database.
 
-The next code snippets will download hundreds of megabytes of Greek text
-to a local computer for quicker access. tqdm downloader requires a
-stable internet connection to work properly.
+The next code snippets will download hundreds of megabytes of Greek text to a
+local computer for quicker access. `tqdm` downloader requires a stable internet
+connection to work properly.
 
-One could also download source zip files via browser and place them to
-the same directory with the Jupyter notebook or where Python is
-optionally run in shell mode. Zip files must then be renamed as
-`perseus.zip` and `first1k.zip`.
+One could also download packed source ZIP files via browser and place them to
+the same directory with the Jupyter notebook or where Python is optionally run
+in shell mode. ZIP files must then be renamed as `perseus.zip` and
+`first1k.zip`.
 
-1\. Download packed zip files from their GitHub repositories:
+1\. Download packed ZIP files from their GitHub repositories:
 
 ```python
 from functions import download_with_indicator, perseus_zip_file, first1k_zip_file
@@ -115,7 +115,7 @@ Downloading: https://github.com/OpenGreekAndLatin/First1KGreek/archive/master.zi
 195.00MB [09:15, 201.54KB/s]
 ```
 
-2\. Unzip files to the corresponding directories:
+2\. Unzip (extract) files to the corresponding directories:
 
 ```python
 from functions import perseus_zip_dir, first1k_zip_dir, unzip
@@ -124,10 +124,10 @@ unzip(perseus_zip_file, perseus_zip_dir)
 unzip(first1k_zip_file, first1k_zip_dir)
 ```
 
-3\. Copy only suitable Greek text xml files from `perseus_zip_dir` and
-`first1k_zip_dir` to the temporary work directories. Original
-repositories contain a lot of unnecessary files for the riddle solver
-which are skipped in this process.
+3\. Copy only suitable Greek text XML files from `perseus_zip_dir` and
+`first1k_zip_dir` to the temporary work directories. Original repositories
+contain a lot of unnecessary files for the riddle solver which are skipped in
+this process.
 
 ```python
 from functions import copy_corpora, joinpaths, perseus_tmp_dir, first1k_tmp_dir
@@ -151,10 +151,9 @@ Depending on if the files have been downloaded already, the output may differ.
 
 ### Collecting files
 
-When the files has been downloaded and copied, it is time to read them
-to the RAM (Random-Access Memory). At this point file paths are
-collected to the `greek_corpora_x` variable that is used on later
-iterators.
+When the files has been downloaded and copied, it is time to read them to the
+RAM (Random-Access Memory). At this point file paths are collected to the
+`greek_corpora_x` variable that is used on later iterators.
 
 ```python
 from functions import init_corpora, perseus_dir, first1k_dir
@@ -169,38 +168,37 @@ Output:
 1705 files found
 ```
 
-Actual files found may differ by increasing over time, because Greek
-corpora repositories are constantly maintained and new texts are added
-by voluteer contributors.
+Actual files found may differ by increasing over time, because Greek corpora
+repositories are constantly maintained and new texts are added by voluteer
+contributors.
 
 ### Processing files
 
-Next step is to extract Greek content from the downloaded and selected
-XML source files. Usually this task might take a lot of effort in NLP
-(Natural Language Processing). Python NLTK<!-- cite author="nltk.org" title="NLTK - Natural Language ToolKit" date="" location="" type="website" href="https://www.nltk.org/" -->
+Next step is to extract Greek content from the downloaded and selected XML
+source files. Usually this task might take a lot of effort in NLP (Natural
+Language Processing). Python NLTK<!-- cite author="nltk.org" title="NLTK - Natural Language ToolKit" date="" location="" type="website" href="https://www.nltk.org/" -->
 and CLTK<!-- cite author="cltk.org" title="CLTK - The Classical Language ToolKit" date="" location="" type="website" href="https://github.com/cltk/cltk" --> libraries would be useful
-at this point, but in my case I'm only interested of Greek words, that
-is, text content encoded by a certain Greek Unicode
-letter block<!-- cite author="wikipedia.org" title="Greek in Unicode" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Greek_alphabet#Greek_in_Unicode" -->. Thus,
+at this point, but in my case I'm only interested of Greek words, that is, text
+content encoded by a certain Greek Unicode letter block<!-- cite author="wikipedia.org" title="Greek in Unicode" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Greek_alphabet#Greek_in_Unicode" -->. Thus,
 I'm able to simplify this part by removing all other characters from source
 files except Greek characters. Again, details can be found from the
 `functions.py` script.
 
-Extracted content is saved to the corpora/author/work based directories.
-Simplified uncial conversion is also made at the same time so that the
-final data contain only plain uppercase words separated by spaces.
-Pretty much in a format written by the ancient Greeks, except they
-didn't even use spaces to denote individual words and phrases.
+Extracted content is saved to the `corpora/author/work` based directories.
+Simplified uncial conversion is also made at the same time so that the final
+data contain only plain uppercase words separated by spaces. Pretty much in a
+format written by the ancient Greeks, except they didn't even use spaces to
+denote individual words and phrases.
 
 ![Papyrus 47, Uncial Greek text without spaces. Rev. 13:17-](/media/P47.png){caption=1}
 
-Next code execution will take several minutes depending on if you have
-already run it once and have the previous temporary directories
-available. Old processed corpora files are removed first, then they are
-recreated by calling `process_greek_corpora` function.
+Next code execution will take several minutes depending on if you have already
+run it once and have the previous temporary directories available. Old processed
+corpora files are removed first, then they are recreated by calling
+`process_greek_corpora` function.
 
 ```python
-from functions import remove, all_greek_text_file, perseus_greek_text_file,\
+from functions import remove, all_greek_text_file, perseus_greek_text_file, \
                       first1k_greek_text_file, process_greek_corpora
 # remove old processed temporary files
 try:
