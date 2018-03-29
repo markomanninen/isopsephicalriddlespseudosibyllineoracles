@@ -90,7 +90,7 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 
 #### Table data
 
-|<td colspan=3>Perseus     |<td colspan=3>FirstK1   |<td colspan=3>Both
+|<td colspan=2>Perseus     |<td colspan=2>FirstK1   |<td colspan=2>Both
 |------|---------|---------|------|-------|---------|------|-------|---------|
 | Char | Count   | Percent | Char | Count | Percent | Char | Count | Percent |
 | Α    | 4182002 | 10.96   | Α | 26817705 | 10.76   | Α | 30999707 | 10.79   |
