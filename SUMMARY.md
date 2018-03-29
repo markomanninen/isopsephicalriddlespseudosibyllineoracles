@@ -7,7 +7,7 @@
   * [Statistics](./chapter1/statistics.md)
     * [Letters](./chapter1/statistics.md#letters)
   * [Unique words database](./chapter1/uniquewords.md)
-    * [Store database](./chapter1/uniquewords.md#store_database)
+    * [Store database](./chapter1/uniquewords.md#store-database)
 * [Isopsephical riddles in Greek Pseudo Sibylline hexameter poetry](./chapter2/index.md)
 * [Study of the results of the riddle solver](./chapter3/index.md)
 * [References](references.md)
