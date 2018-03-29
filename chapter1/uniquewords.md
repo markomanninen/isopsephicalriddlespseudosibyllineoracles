@@ -84,7 +84,7 @@ display_html(words.to_html(index=False), raw=True)
 Total records: 833817
 
 | Word | Count   | Percent |
-|--------------------------|
+|:----:|:-------:|:-------:|
 | ΚΑΙ  | 1781528 | 5.38    |
 | ΔΕ   | 778589  | 2.35    |
 | ΤΟ   | 670952  | 2.03    |
@@ -558,7 +558,7 @@ Output:
 
 That's all for the Greek corpora processing and basic statistics.
 One could further investigate, categorize, and compare individual texts,
-but for me this is enought and it is time to jump to the second big task that 
+but for me this is enought and it is time to jump to the second big task that
 is defining procedures for the riddle solver.
 
 {% include 'footnotes.md' %}

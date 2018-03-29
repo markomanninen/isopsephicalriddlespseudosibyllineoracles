@@ -89,7 +89,7 @@ display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 
 #### Table data
 
-| Perseus                 | FirstK1                | Both                    |
+| Perseus               ||| FirstK1              ||| Both                    |
 |----------------------------------------------------------------------------|
 | Char | Count | Percent  | Char | Count | Percent | Char | Count | Percent  |
 |----------------------------------------------------------------------------|
