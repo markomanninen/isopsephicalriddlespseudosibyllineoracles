@@ -1,6 +1,4 @@
-## Processing Greek corpora for the riddle solver
-
-### Pseudo-Sibylline oracles
+## Pseudo-Sibylline oracles
 
 Pseudo-Sibylline oracles<!-- cite author="wikipedia.org" title="Sibylline oracles" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Sibylline_Oracles" -->
 contain hexametric poems written in Ancient Greek. These *oracula* were mainly
@@ -30,7 +28,7 @@ books:
 * Sibylline Oracles in _The Old Testament Pseudepigrapha, Volume I_<!-- cite author="J. J. Collins" title="Sibylline Oracles in The Old Testament Pseudepigrapha, Volume I" date="2011" location="Pages 317-472" type="book" href="https://books.google.fi/books?id=TNdeolWctsQC" --> by J. J. Collins
 * Part 1 in _The Book Three of the Sibylline Oracles and Its Social Setting_<!-- cite author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and Its Social Setting" date="2003" location="Part 1" type="book" href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> by Rieuwerd Buitenwerf
 
-### Focus of the study
+## Focus of the study
 
 Some material in the Pseudo-Sibylline oracles contains cryptic puzzles,
 referring to persons, cities, countries, and epithets of God for example. These

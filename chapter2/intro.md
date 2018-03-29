@@ -1,5 +1,4 @@
-Introduction
-------------
+## Introduction to the riddles
 
 There are dozens of alphanumeric riddles in the Pseudo Sibylline books.
 Major part of them are simple, only referring to the first letter of the
