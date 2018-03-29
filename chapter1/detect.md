@@ -9,7 +9,7 @@ useful on the next chapters too. I have provided a
 search\_words\_from\_corpora function to simplify this task. You may
 find the code from functions.py and alter it for your use.
 
-### Longest words
+__Longest words__
 
 ```python
 from functions import search_words_from_corpora
@@ -119,9 +119,9 @@ Output:
 For a small explanation:
 [Aristophanes](https://en.wikipedia.org/wiki/Aristophanes) was a Greek
 comic playwright and a word expert of a kind. Mathematical texts are
-also filled with long compoud words for fractions for example.
+also filled with long compound words for fractions for example.
 
-### Highest isopsephy
+__Highest isopsephy__
 
 ```python
 # I'm collecting the plain text words from the already instantiated m variable
@@ -262,9 +262,9 @@ Output:
 τωυπονυχα υποδυνα κεκαδαιμωσδουστη σαρκοσεισδυσησηνυσε θ ποιων
 ```
 
-That's all for the Greek corpora processing and basic statistics.
-One could further investigate, categorize, and compare individual texts,
-but for me this is enought and it is time to jump to the second big task that
-is defining procedures for the riddle solver.
+That's all for the Greek corpora processing and basic statistics. One could
+further investigate, categorize, and compare individual texts, but for me this
+is enought and it is time to jump to the second big task that is defining
+procedures for the riddle solver.
 
 {% include 'footnotes.md' %}

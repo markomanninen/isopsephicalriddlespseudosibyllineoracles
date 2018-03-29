@@ -1,6 +1,6 @@
 ## Downloading corpora
 
-I'm going to use Perseus and OpenGreekAndLatin corpora for the study by
+I'm going to use `Perseus` and `OpenGreekAndLatin` corpora for the study by
 combining them into a single raw text file and unique words database.
 
 The next code snippets will download hundreds of megabytes of Greek text to a

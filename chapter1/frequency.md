@@ -4,11 +4,11 @@ So, I already know that there are certain words repeating very often,
 for different reasons. But then there are words repeating once or few
 times only. Thus, it is relevant to ask, how many percent of the whole
 word base, the least repeated words actually take? For the task I'm
-using groupby and count methods of the Dataframe object in Pandas.
+using groupby and count methods of the `Dataframe` object in Pandas.
 
 ```python
 # length of the words database. taken to a variable to prevent unnecessary
-# repeatition in the next for loop
+# repetition in the next for loop
 le = len(df)
 # group words by occurrence and count grouped items, list the first 10 items
 for x, y in df.groupby([1, 2]).count()[:10].T.items():

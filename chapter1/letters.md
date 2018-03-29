@@ -35,7 +35,7 @@ from functions import display_side_by_side
 display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)
 ```
 
-### Table data
+__Table data__
 
 |<td colspan=2>Perseus     |<td colspan=2>FirstK1   |<td colspan=2>Both
 |------|---------|---------|------|-------|---------|------|-------|---------|
@@ -77,7 +77,7 @@ between Perseus and First1k corpora, like the occurrence of `Ρ`/`Η`, `K`/`Π`,
 and `Ο`/`Ι`/`Ε` which are probably explained by the difference of the included
 text genres in the corpora.
 
-### Bar chart
+__Bar chart__
 
 The next chart will show visually which are the most used letters and
 the least used letters in the available Ancient Greek corpora.
