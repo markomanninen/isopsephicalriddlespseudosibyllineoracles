@@ -31,7 +31,8 @@ Your can download independent Jupyter notebooks for
 [solving riddles](https://git.io/vASrY)<!-- cite author="Marko Manninen" title="Solving riddles" date="2018" location="" type="website" href="https://git.io/vASrY" -->, and
 [analysing results](https://git.io/vASrY)<!-- cite author="Marko Manninen" title="Analysing results" date="2018" location="" type="website" href="https://git.io/vASrY" -->.
 
-You may also run code directly from Python shell<!-- cite author="python.org" title="Python shell" date="" location="" type="website" href="https://www.python.org/shell/" --> environment,
-no problem.
+You may also run the code of this book directly from Python shell<!-- cite author="python.org" title="Python shell" date="" location="" type="website" href="https://www.python.org/shell/" -->,
+no problem. All you need is basicly the `functions.py` script on the directory
+you are launching Python shell or running the Jupyter Notebook document.
 
 {% include 'footnotes.md' %}
