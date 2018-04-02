@@ -1,21 +1,33 @@
 ## Detect source texts
 
-Stats are nice, but it wouldn't be so useful, if there was no routine
-to find out words from corpora, where they actually occur.
+Statistics is nice, but it wouldn't be so useful, if there was no routine to find
+out words from the corpora, where they actually occur.
 
-The last part of the chapter one is to specify the procedure to find out
-the exact places of the given words in the corpora. This is going to be
-useful on the next chapters too. I have provided a
-search\_words\_from\_corpora function to simplify this task. You may
-find the code from functions.py and alter it for your use.
+The last part of the chapter one is to demonstrate the procedure how to find out
+the exact places of the given words in the corpora. This is going to be useful on
+the next chapters. I have provided the `search_words_from_corpora` function to
+simplify this task. Again, the actual function code can be found from the
+`functions.py` script.
 
 __Longest words__
 
+On the search result, the author and the text file is listed following with the
+search term and how many hits there was on the text. Finally, a small excerpt is
+fetched from the text around the search term. Excerpt has all the original
+diacritics and letter case intact. The next step would be to search original
+word from Google which will the most probably tell enought about the word and
+the context. Even the reader uncabable to Greek can find out the meaning of the
+word with a pretty small effort.
+
 ```python
 from functions import search_words_from_corpora
-# I'm collecting the plain text words from the already instantiated l variable
+# collect the plain text words from the already instantiated l variable
+# l variable is a dataframe and the transpose (T) of it is used here
 words = list(y[0] for x, y in l.T.items())
-search_words_from_corpora(words, [perseus_dir, first1k_dir])
+# pass words and directories in a list to search words from
+# the third parameter specifies how many occurrences of the word is
+# listed per author text in maximum
+search_words_from_corpora(words, [perseus_dir, first1k_dir], 3)
 ```
 
 Output:
@@ -55,76 +67,38 @@ Output:
 
 ----- ΟΥΝΙΚΑΝΩΣΠΕΡΙΑΥΤΩΝΗΜΙΝΕΝΤΟΙΣΠΕΡΙ (1) -----
 οιησά αενο τ ιστεύσομεν ρ Φ τεθεώρηται μὲν οὐνὶκανῶςπερὶαὐτῶνἡμῖνἐντοῖςπερὶ φύσεως ἰκαὶἱκανῶς φησί περὶτῶ ν ἀρχῶν τῶν φυσικῶν ἐν τοῖς περὶ φύσεως
-
-+ AlexanderOfAphrodisias, InAristotelisTopicorumLibrosOctoCommentaria (tlg0732.tlg006.opp-grc1.xml) =>
-
------ ΟΤΙΤΟΥΜΗΔΙΑΠΡΟΤΕΡΩΝΟΡΙΖΕΣΘΑΙΤΡΕΙΣ (1) -----
-Τοῦ δὲ μὴ ἐκπροτέρων τρεῖς εἰσι τρόποι Ὅτιτοῦμὴδιὰπροτέρωνὁρίζεσθαιτρεῖς εἰσι τρόποι πρῶτοςμὲν εἰ διὰ τοῦ ἀντικειμένου τὸ ἀντικείμενον ὥρισται ἅμ γὰρ τῇ φύσει τὰ ἀντικείμ
-
-+ ApolloniusDyscolus, DeAdverbiis (tlg0082.tlg002.1st1K-grc1.xml) =>
-
------ ΠΑΡΕΓΕΝΟΜΕΝΟΜΕΝΟΣΗΝΚΑΙΕΤΙΕΚΤΗΣΛΕΣΒΟΥΟΥΦΑΜΕΝ (1) -----
-τῆϲ Λέϲβου τηϲ εκ εκ Λεϲβο παρεγενόμην καὶ ἔτι οῦ φαμεν παρεγενομενομενοϲηνκαιετιεκτηϲλεϲβουουφαμεν Α εκ τηϲ Λεϲβου ἔτι οὐ
-
-+ ApolloniusDyscolus, DeConstructione (tlg0082.tlg004.1st1K-grc1.xml) =>
-
------ ΚΑΙΤΟΝΑΡΙΣΤΑΡΧΟΝΑΣΜΕΝΩΣΤΗΝΓΡΑΦΗΝΤΟΥ (1) -----
-ἠλογῆϲθαι φαϲ δὲ καίτὸνἈρίϲταρχονἀϲμένωϲτὴνγραφὴντοῦ Δικαιάρχουπαραδέξαϲθαι ἐνγὰρἁπάϲαιϲ ν τὸ εὲῇ ἐν πατρίδι γαί ὑπολαβόντα τὸ ἑαυτῆϲ νοεὶϲθαι ἐκ το
-
------ ΑΡΣΕΝΙΚΩΝΟΝΟΜΑΤΩΝΣΤΟΙΧΕΙΑΕΣΤΙΠΕΝΤΕ (1) -----
-τ τὸ ᾶ τελικόν ἐϲτιν κτλ Τελικὰ ἀρϲενικῶνὸνομάτωνϲτοιχεῖάἐϲτιπέντε θηλυκῶνδὲ ὸκτώ ᾶη ωνξΒ ψ οὐδετέ ρων δὲ ἐ ῦ εραίαν
-
------ ΑΡΙΣΤΑΡΧΟΣΚΑΙΟΙΑΠΟΤΗΣΣΧΟΛΗΣΦΑΣΙΝ (1) -----
-αὐτῇ Ϲ θϲτή εϲι Β καθότ Ϲ καθ ϲ ὁ Ἀρίϲταρχοϲκαὶοίἀπὸτῆϲϲχολῆϲφαϲιν οὶϲ οὐ ϲυγκαταθετέον ε φαϲίν οὐκ ὀρθῶϲ
-
-+ Artemidorus, Onirocriticon (tlg0553.tlg001.1st1K-grc1.xml) =>
-
------ ΑΥΤΟΜΑΤΟΙΔΕΟΙΘΕΟΙΑΠΑΛΛΑΣΣΟΜΕΝΟΙ (1) -----
-ς μεγάλας σημαίνει οἱ γὰρ ἐν μεγάλαις συμφοραῖς γενόμενοι καὶ τῆς πρὸς θεούς εὐσεβείας ἀφίστανται αὐτόματοιδέοἱθεοὶἀπαλλασσόμενοι καὶ τὰ ἀγάλμιατα αὐτῶν συμπίπτοντα θάνατον τῷ ἰδόντι ἤ τινι τῶν αὐτοῦ προαγορεύει θεο
-
-+ JoannesPhiloponus, InAristotetelisMeteorologicorumLibrumPrimumCommentarium (tlg4015.tlg005.opp-grc1.xml) =>
-
------ ΛΛΗΣΤΗΣΑΝΩΘΕΝΘΕΡΜΟΤΗΤΟΣΑΤΜΙΔΟΥΜΕΝΟΝΦΕΡΕΤΑΙ (1) -----
-νῦν μενούσης ἀμεταβλήτου τὸ οὖν περὶ τὴν γῆν ὑγρόν φησίν ὑπὸ τῶν ἀκτίνων καὶ ὑπὸ τῆς ὰ λληςτῆςἄνωθενθερμότητοςἀτμιδούμενονφέρεται ἄνω πῶς μὲν ἡ ἐκ τῶν ἀκτίνων γίνεται θερμότης ἐδίδαξεν ὅτι ὁ ε ναπο λαμβαν
-
------ ΔΥΝΑΤΟΝΔΕΤΟΑΙΤΙΑΙΗΣΓΕΝΕΣΕΩΣΚΑΙΤΗΣΦΘΟΡΑΣ (1) -----
-λὴ ἀνάλογόν ἐστι γενέσει ἡ δὲ τοὔμπαλιν τῶν κουφοτέρων εἰς τὰ βαρότεραφθορᾷ δυνατὸνδὲτὸαἰτίαιῆςγενέσεωςκαὶτῆςφθορᾶς διὰ τὸ ἄρθρον μὴ καθολικῶς ἀκούειν πάσης γενέσεως καὶ φθορᾶς ἀλλὰ ὑετοῦ χιόν
-
-+ Libanius, Epistulae1-839 (tlg2200.tlg001.opp-grc1.xml) =>
-
------ ΕΜΟΥΟΙΑΠΕΦΕΥΓΑΧΕΙΡΑΣΛΥΠΗΣΑΣΜΕΝΟΥΔΕΝΑΟΥΔΕΝ (1) -----
-δον κατηφῆ καὶ συνεοταλμἐνον καὶ δάκρυα πρὸ τῶν λόγωνἀφεὶς ἐγὼ μόλις τὰς τῶν παθόντων ἐμοῦόιαπέφευγαχεῖραςλυπήσαςμὲνοὐδέναοὐδέν ἡνίκα ἐξῆν μικρο δὲ διασπασθείς καὶ προσετίθει φυγὴν ἀδελφοῦ καὶ γένους ὅλου πλάνην καὶ γῆν ἄσπ
-
------ ΚΑΙΙΚΕΛΗΧΡΥΣΗΑΦΡΟΔΙΤΗΚΑΙΟΙΣΕΚΟΣΜΗΣΕ (1) -----
-ε γονεῦσιν αὐτῆς καὶ σοὶ συνη σθην τοῖς μέν οἕαν ἔφυσαν σοὶ δέ οἴαν ἔχεις Δήλῳ δή ποτε τοῖον καὶἰκέληχρυσῇἈφροδίτῃκαὶοἷςἐκόσμησε γυναῖκας Ὅμηρος πάντα ἂν δέξαιτο ἀναμιμν
-
------ ΚΑΝΤΩΝΕΠΙΤΑΙΣΔΥΝΑΜΕΣΙΠΑΡΑΒΑΙΝΗ (1) -----
-ὅτι ὦ βασιλεῦ τῶν ἀδικούντων οὐδένα οὺόὲν ἀξίωμα ῥύσεται ἀλλὰ κἂν τῶν δικαζόντων τις κἂντῶνἐπὶταἱςδυνάμεσιπαραβαίνη του ςνο μους οὐκἀνέζομαιἀμελεῖσθαι τα
-
-+ Libanius, OratioI (tlg2200.tlg00401.opp-grc1.xml) =>
-
------ ΗΔΙΚΗΜΕΝΟΝΔΕΑΠΕΡΡΙΜΜΕΝΟΝΠΕΡΙΟΡΑΣ (1) -----
-τέ τῶν μὲν ἐξέβαλες τὰ δὲοὐΙδίδως ἀλλ ὁ μὲν ἠπατηκὼς τρυφᾷ τὸν ἠδικημένονδὲἀπερριμμένονπεριορᾷς τοι αυ τα με ν προ ς το ε δος πο ρ
-
-+ Suda, SuidaeLexicon (tlg9010.tlg001.1st1K-grc1.xml) =>
-
------ ΟΡΘΟΦΟΙΤΟΣΥΚΟΦΑΝΤΟΔΙΚΟΤΑΛΑΙΠΩΡΩΝ (2) -----
-Ὀρθοφοιτοϲυκοφαντοδικοταλαιπώρων Ἀριϲτοφάνηϲ ὁτιὴ βούλομαι τούτων ἀπαλλαχθέντα τῶν ὀρθοφοιτοϲυκοφα
-οδικοταλαιπώρων Ἀριϲτοφάνηϲ ὁτιὴ βούλομαι τούτων ἀπαλλαχθέντα τῶν ὀρθοφοιτοϲυκοφαντοδικοταλαιπώρων τρόπων ζῆν βίον γενναῖον ὥϲπερ Μόρυχοϲ αἰτίαν ἔχων ταῦτα δρᾶν
-
------ ΣΠΕΡΜΑΓΟΡΑΙΟΛΕΚΙΘΟΛΑΧΑΝΟΠΩΛΙΔΕΣ (1) -----
-Ὦ ϲπερμαγοραιολεκιθολαχανοπώλιδεϲ ὦ ϲκοροδοπανδοκευτριαρτοπώλιδεϲ οὐκ ἐξέλκετ οὐ παιήϲετ οὐκ
 ```
 
-For a small explanation:
-[Aristophanes](https://en.wikipedia.org/wiki/Aristophanes) was a Greek
-comic playwright and a word expert of a kind. Mathematical texts are
-also filled with long compound words for fractions for example.
+Aristophanes<!-- cite author="wikipedia.org" title="Aristophanes" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Aristophanes" --> was a Greek
+comic playwright and a word expert of a sort which explains many of the long
+words occuring in his texts. Also, mathematical texts are filled with long
+compound words for fractions, thus many of the longer words appear in
+mathematical source books. Note that here we actually do rely on the word
+tokening made by other human editors. Original text might not have separated
+words with spaces as usually Greek text was continuous stream of alphabets
+without any punctuation and spaces. Only the later editors and copyists have
+done this job for us, which is good, but it is also possible that someone has
+made mistakes or that the original intention of the word structure has never
+really been understood by any other readers but the author of the text. To give
+a hint of the complex issue involved on this topic, one may read a good article
+from this blog post:
+
+http://hellenisteukontos.blogspot.fi/2010/03/what-are-longest-words-of-greek.html
+
+All the texts in the downloaded corpora can be found in online readable format
+from these websites:
+
+1. http://catalog.perseus.org/
+2. http://cts.dh.uni-leipzig.de/
+3. http://opengreekandlatin.github.io/First1KGreek/
 
 __Highest isopsephy__
 
+Finally, lets print out text sources and excerpts of the text containing the
+biggest isopsephical values of the words:
+
 ```python
-# I'm collecting the plain text words from the already instantiated m variable
+# collect the plain text words from the already instantiated m variable
 words = list(y[0] for x, y in m.T.items())
 search_words_from_corpora(words, [perseus_dir, first1k_dir])
 ```
@@ -189,82 +163,11 @@ Output:
 καὶ μὴ διεψεῦσθαι τῷ λόγῳ ἔστιν δὲ καὶ ὁ φρόνιμός τοιοῦτος ὁτῷ λόγῳ
 τῷὀρθῷἕκασταθεωρῶν πότερον δ ἐνδέχεταιτὸν φρόνιμον ἀκρατῆ εἶναι ἢ οὔ
 ἀπορήσειε γὰρ ἄν τις τὰ εἰρημένα ἐὰν δὲ πα ρ
-
-+ ChroniconPaschale, ChroniconPaschale (tlg2371.tlg001.opp-grc1.xml) =>
-
------ ΟΠΡΩΤΟΣΑΝΘΡΩΠΩΝΥΠΟΔΕΙΞΑΣ (1) -----
-δείξας οὐρανοδρομεῖν όπρῶτοςἀνθρώπωνὑποδείξας ἀγγέλων καὶ ἀνθρώπων μίαν
-ὁδόν ὁ τὴν γῆν λαχὼν οἰκητηιριον καὶ τὸν οὐρανὸν
-
-+ EvagriusScholasticus, HistoriaEcclesiastica (tlg2733.tlg001.1st1K-grc1.xml) =>
-
------ ΓΛΩΣΣΟΤΟΜΗΘΕΝΤΩΝΧΡΙΣΤΙΑΝΩΝ (1) -----
-ιδ Περὶ Ὀνωρίχου τοῦ Βανδίλων ἄρχοντος καὶ τῶν γλωσσοτομηθέντωνΧριστιανῶν
-παῤ αὐτοῦ ιε Περὶ Καβαώνου
-
------ ΕΠΙΣΚΟΠΩΚΩΝΣΤΑΝΤΙΝΟΥΠΟΛΕΩΣ (1) -----
-ἐστιν ἐν τούτοις Ἐπιστολὴ ἤτοι δέησις ἀποσταλεῖσα Ἀκακίῳ
-ἐπισκόπῳΚωνσταντινουπόλεως παρὰ τῶν τῆς Ἀσίας ἐπισκόπων Ἀκακίῳ τῷ ἁγιωτάτῳ
-καὶ ὁσιωτάτῳ πατριάρχῃ
-
-+ JoannesPhiloponus, InAristotetelisMeteorologicorumLibrumPrimumCommentarium (tlg4015.tlg005.opp-grc1.xml) =>
-
------ ΛΛΗΣΤΗΣΑΝΩΘΕΝΘΕΡΜΟΤΗΤΟΣΑΤΜΙΔΟΥΜΕΝΟΝΦΕΡΕΤΑΙ (1) -----
-νῦν μενούσης ἀμεταβλήτου τὸ οὖν περὶ τὴν γῆν ὑγρόν φησίν ὑπὸ τῶν ἀκτίνων καὶ
-ὑπὸ τῆς ὰ λληςτῆςἄνωθενθερμότητοςἀτμιδούμενονφέρεται ἄνω πῶς μὲν ἡ ἐκ τῶν
-ἀκτίνων γίνεται θερμότης ἐδίδαξεν ὅτι ὁ ε ναπο λαμβαν
-
------ ΔΥΝΑΤΟΝΔΕΤΟΑΙΤΙΑΙΗΣΓΕΝΕΣΕΩΣΚΑΙΤΗΣΦΘΟΡΑΣ (1) -----
-λὴ ἀνάλογόν ἐστι γενέσει ἡ δὲ τοὔμπαλιν τῶν κουφοτέρων εἰς τὰ βαρότεραφθορᾷ
-δυνατὸνδὲτὸαἰτίαιῆςγενέσεωςκαὶτῆςφθορᾶς διὰ τὸ ἄρθρον μὴ καθολικῶς ἀκούειν
-πάσης γενέσεως καὶ φθορᾶς ἀλλὰ ὑετοῦ χιόν
-
-+ Libanius, Epistulae1-839 (tlg2200.tlg001.opp-grc1.xml) =>
-
------ ΕΜΟΥΟΙΑΠΕΦΕΥΓΑΧΕΙΡΑΣΛΥΠΗΣΑΣΜΕΝΟΥΔΕΝΑΟΥΔΕΝ (1) -----
-δον κατηφῆ καὶ συνεοταλμἐνον καὶ δάκρυα πρὸ τῶν λόγωνἀφεὶς ἐγὼ μόλις τὰς
-τῶν παθόντων ἐμοῦόιαπέφευγαχεῖραςλυπήσαςμὲνοὐδέναοὐδέν ἡνίκα ἐξῆν μικρο δὲ
-διασπασθείς καὶ προσετίθει φυγὴν ἀδελφοῦ καὶ γένους ὅλου πλάνην καὶ γῆν ἄσπ
-
-+ PhiloJudaeus, DeVitaMosisLibI‑Ii (tlg0018.tlg022.opp-grc1.xml) =>
-
------ ΨΥΧΟΓΟΝΙΜΩΤΑΤΩΝ (1) -----
-ν ἀπετελέσθησαν αἱ σωματικαὶ ποιότητες ἐφεὶς τῷ Μωυσέως ἀδελφῷ τὰς δ ἴσας
-ἐξ ἀέρος καὶ πυρὸς τῶν ψυχογονιμωτάτων μόνῳ Μωυσεῖ μίαν δὲ κοινὴν ἀμφοτέροις
-ἑβδόμην ἐπιτρέπει τρεῖς δὲ τὰς ἄλλας εἰς συμπ
-
-+ Porphyrius, VitaPythagorae (tlg2034.tlg002.1st1K-grc1.xml) =>
-
------ ΤΟΥΤΟΥΣΛΕΓΟΝΤΕΣΩΣΠΡΟΣΤΗΝ (1) -----
-οι τὰς δυνάμεις τῶν στοιχείων καὶ αὐτὰ ταῦτα βουλόμενοι παραδοῦναι
-παρεγένοντο ἐπὶ τοὺςχαρακτῆρας τούτουςλέγοντεςὡςπρὸςτὴν πρώτην διδασκαλίαν
-στοιχεῖα εἶναι ὕστερον μέντοι διδάσκου σιν ὅτι οὐχ οὗτοι στοιχεῖά εἰσιν οἱ
-χαρ
-
-+ Suda, SuidaeLexicon (tlg9010.tlg001.1st1K-grc1.xml) =>
-
------ ΟΡΘΟΦΟΙΤΟΣΥΚΟΦΑΝΤΟΔΙΚΟΤΑΛΑΙΠΩΡΩΝ (2) -----
-Ὀρθοφοιτοϲυκοφαντοδικοταλαιπώρων Ἀριϲτοφάνηϲ ὁτιὴ βούλομαι τούτων
-ἀπαλλαχθέντα τῶν ὀρθοφοιτοϲυκοφα
-
-οδικοταλαιπώρων Ἀριϲτοφάνηϲ ὁτιὴ βούλομαι τούτων ἀπαλλαχθέντα τῶν
-ὀρθοφοιτοϲυκοφαντοδικοταλαιπώρων τρόπων ζῆν βίον γενναῖον ὥϲπερ Μόρυχοϲ
-αἰτίαν ἔχων ταῦτα δρᾶν
-
------ ΚΩΔΩΝΟΦΑΛΑΡΑΧΡΩΜΕΝΟΥΣ (1) -----
-μετήνεκται οὕτω ψοφοῦνταϲ ψοφοῦντεϲ Κωδωνοφαλαραχρωμένουϲ αὐτὰϲ Κώδων
-Σοφοκλῆϲ Τυρρηνικῆϲ
-
-+ ValeriusBabrius, FabulaeAesopeae (tlg0614.tlg001.1st1K-grc2.xml) =>
-
------ ΛΕΟΝΤΑΤΥΦΛΩΣΩΝΣΚΩΛΩΨΔΕΤΟΥ (1) -----
-τι ποιήσω καὶ εἰπὼν ἐπέβαλε τοιχοδεχειρασεπεβαλετον λεοντατυφλωσωνσκωλωψδετου
-τωυπονυχα υποδυνα κεκαδαιμωσδουστη σαρκοσεισδυσησηνυσε θ ποιων
 ```
 
 That's all for the Greek corpora processing and basic statistics. One could
 further investigate, categorize, and compare individual texts, but for me this
-is enought and it is time to jump to the second big task that is defining
+is enough and it is time to jump to the second big task that is defining
 procedures for the riddle solver.
 
 {% include 'footnotes.md' %}

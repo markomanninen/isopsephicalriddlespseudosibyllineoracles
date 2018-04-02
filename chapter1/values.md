@@ -38,19 +38,20 @@ HTML(m.to_html(index=False))
 | ΤΟΥΤΟΥΣΛΕΓΟΝΤΕΣΩΣΠΡΟΣΤΗΝ                     | 1     | 4211      |
 | ΨΥΧΟΓΟΝΙΜΩΤΑΤΩΝ                              | 1     | 4194      |
 
-These are very rare words, as was the case with the longest words. But as it can
-be seen, the longest and the biggest isopsephical words are just partly
-overlapping. Isopsephical value of the word is not depending of the length of
-the word, but it is depending on the fact, how many times the latter part of
-the letters in the alphabet occus in the word. In `ΛΕΟΝΤΑΤΥΦΛΩΣΩΝΣΚΩΛΩΨΔΕΤΟΥ`
-letters `Τ`, `Φ`, `Ω`, and `Σ` are repeated several times so that the sum of
-the alphabetic numerals in the word, i.e. the isopsephical value, is 6865. The
-value gap between the first and the second word is rather big. Results like
-these are interesting because they may tell deliberate construction of the
-words, which statistician wants to detect from the vast sample of coincidental
-hits.
+These are very rare words, as was the case with the longest words too. It can be
+seen that the longest words and the biggest isopsephical words are just partly
+overlapping. Isopsephical value of the word does not depend on the length of
+the word, but it is depending on the fact, how many times the latter part of the
+letters in the alphabet occus in the word, because they have the biggest value.
+In the word `ΛΕΟΝΤΑΤΥΦΛΩΣΩΝΣΚΩΛΩΨΔΕΤΟΥ` letters Τ, Φ, Ω, and Σ are repeated several
+times so that the sum of the alphabetic numerals in the word, i.e. the isopsephical
+value, adds up to 6865. The value gap between the first and the second word is rather
+big, 1679 and after that the gap is between one and two hundred and decreasing.
+Results like these are interesting because they may tell about the deliberate
+construction of the words, which statistician wants to detect from the vast sample
+of coincidental hits.
 
-Before going to the last useful procedure of spotting the location of the words,
-lets see the special statictic about the frequency of the words.
+Before going to the last useful procedure of spotting the exact location of the words
+in the corpora, lets see a special statictic about the frequency of the words.
 
 {% include 'footnotes.md' %}

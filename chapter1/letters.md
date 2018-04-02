@@ -1,7 +1,7 @@
 ## Letters
 
 I'm using `DataFrame` class from Pandas library to handle tabular data
-and show basic letter statistics for each corpora and combination of
+and show basic letter statistics for each corpora and the combination of
 them. Native `Counter` class in Python is used to count unique elements in
 the given sequence. Sequence in this case is the raw Greek text stripped
 from all special characters and spaces, and elements are the letters of
@@ -71,10 +71,10 @@ __Table data__
 |      |         |         | Ϙ | 13       | 0.00    | Ϙ | 13       | 0.00    |
 
 Greek corpora contains mathematical texts in Greek, which explains why the
-rarely used digamma (`Ϝ`/`Ϛ` = 6), qoppa (`Ϟ`/`Ϙ` = 90), and sampi (`Ϡ` = 900)
+rarely used digamma (Ϝ/Ϛ = 6), qoppa (Ϟ/Ϙ = 90), and sampi (Ϡ = 900)
 letters are included on the table. You can find other interesting differences
-between Perseus and First1k corpora, like the occurrence of `Ρ`/`Η`, `K`/`Π`,
-and `Ο`/`Ι`/`Ε` which are probably explained by the difference of the included
+between Perseus and First1K corpora, like the occurrence of Ρ/Η, K/Π,
+and Ο/Ι/Ε which are probably explained by the difference of the included
 text genres in the corpora.
 
 __Bar chart__
@@ -84,8 +84,8 @@ the least used letters in the available Ancient Greek corpora.
 
 ![Letter statistics](/media/stats.png)
 
-Short vowels with `N`, `S`, and `T` consonants pops up as the most used letters.
-The least used letters are `Ζ`, `Ξ`, and `Ψ`, if the exclusive numerals `Ϝ`,
-`Ϛ`, `Ϟ`, `Ϙ`, and `Ϡ` are not counted.
+Short vowels with N, S, and T consonants pops up as the most used letters.
+The least used letters are Ζ, Ξ, and Ψ, if the exclusive numerals Ϝ,
+Ϛ, Ϟ, Ϙ, and Ϡ are not counted.
 
 {% include 'footnotes.md' %}
