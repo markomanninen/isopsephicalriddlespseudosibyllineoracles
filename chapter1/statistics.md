@@ -4,6 +4,7 @@ After the files have been downloaded and preprocessed, I'm going to output the
 size of them with the help of the `get_file_size` function:
 
 ```python
+# import file size helper function
 from functions import get_file_size
 print("Size of the all raw text: %s MB" % get_file_size(all_greek_text_file))
 print("Size of the perseus raw text: %s MB" % get_file_size(perseus_greek_text_file))
@@ -19,10 +20,12 @@ Size of the first1k raw text: 240.35 MB
 ```
 
 Size may differ depending on the latest size of the downloaded and processed
-corpora. Then, I will calculate other statistics of the saved text files to
-compare their content. By passing text file name, e.g. `perseus_greek_text_file`
-to the `get_stats` function, statistical variables are returned and at the same
-time their values are printed:
+corpora.
+
+Then, I will calculate other statistics of the saved text files to compare their
+content. By passing text file name, e.g. `perseus_greek_text_file` to the
+`get_stats` function, statistical variables are returned and at the same time
+their values are printed:
 
 ```python
 from functions import get_stats

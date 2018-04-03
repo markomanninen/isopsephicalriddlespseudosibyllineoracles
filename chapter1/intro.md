@@ -20,7 +20,7 @@ were mostly grounded in Jewish tradition, but surprisingly some pagan world
 events also came to be interpreted as signs of the coming Messiah. Sibyl, the
 acclaimed author of the prophecies as a woman prophetess, the daughter of Noah
 in the Pseudo-Sibylline lore, has a unique character crossing over the common
-borders in several ancient religions and mythology.
+borders in several ancient religions and myths.
 
 Good introductions to the Pseudo-Sibylline oracles can be found from these two
 books:
@@ -35,18 +35,19 @@ referring to persons, cities, countries, and epithets of God for example. These
 secretive references are often very general in nature, pointing only to the
 first letter of the subject and its numerical value. Solving them requires, not
 so much of mathematical or cryptographical skills in a modern sense, but a proper
-knowledge of the context, both inner textual and historical context.
+knowledge of the context, both the inner textual and the historical context.
 
 Most of the alphanumeric riddles in the oracles can already be taken as solved
-by various researchers. But, some of the riddles are still problematic and open
-for better proposals. Better yet, few of these open riddles are more complex and
-specific enough so that one may try to solve them by modern programmable tools.
+by various researchers. See footnotes in _The Sibylline Oracles_<!-- cite author="Milton S. Terry" title="The Sibylline Oracles" date="1899" location="" type="book" href="http://www.sacred-texts.com/cla/sib/sib.pdf" --> by Milton S. Terry for example. But, some of the riddles are still problematic
+and open for better proposals. Better yet, few of these open riddles are more
+complex and specific enough so that one may try to solve them by modern
+programmable tools.
 
-As an independent researcher not associated or affiliated with any organization,
-the sole motivation and purpose of mine in the this book is to provide a reusable
-and a testable method for processing and analyzing ancient corpora, especially
-detecting alphanumeric patterns in text. Although the target language in this
-study is Ancient Greek, the method should be applicable to any language using
-alphabetic numerals.
+As an independent researcher not affiliated with any organization, the sole
+motivation and purpose of mine in this book is to provide a reusable and a
+testable method for processing and analyzing ancient corpora, especially
+detecting alphanumeric patterns in a digitalized text. Although the target
+language in this study is Ancient Greek, the method should be applicable to any
+language using alphabetic numerals.
 
 {% include 'footnotes.md' %}

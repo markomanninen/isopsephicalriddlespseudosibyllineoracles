@@ -3,7 +3,7 @@
 There are dozens of alphanumeric riddles in the Pseudo Sibylline books.
 Major part of them are simple, only referring to the first letter of the
 person, and the number of that letter. In Greek alphabet, letters
-happens to have a [numerical value](https://en.wikipedia.org/wiki/Greek_numerals)
+happens to have a numerical value<!-- cite author="wikipedia.org" title="Greek_numerals" date="" location="" type="website" href="https://en.wikipedia.org/wiki/Greek_numerals" -->
 also. I'm calling this letter value substitution system with a name *isopsephy*
 simply because it was a name known for the Ancient Greeks. Nowadays, this
 literary device is maybe a bit too much mystified and known mostly by
@@ -18,7 +18,8 @@ The most of the riddles in Sibylline Oracles are actually too simple to
 be solved by computer algorithms only. There are not enough parameters
 for processing, thus all the words meeting simple criteria are far too
 many for any sensical analysis. Take for example Sibyl Book I, verses
-51-60:
+51-60<!-- cite author="Milton S. Terry" title="The Sibylline Oracles" date="1899" location="Book I, verses
+51-60" type="book" href="http://www.sacred-texts.com/cla/sib/sib.pdf" -->:
 
 > Then a great destroyer of pious men shall come, whom seven times ten
 > shall point out clearly. But from him a son, whom the first letter of
@@ -31,9 +32,9 @@ In the footnotes of *The Sibylline Oracles* by Milton S. Terry, page
 41 we find that `seven times ten` refers to the letter `O` (omicron),
 which numerical value is 70.
 
-[Ouespasianos](https://en.wikipedia.org/wiki/Vespasian) is the person
-referred here, because just before the verse 51 the oracle talks about the
-three kings Galba, Otho, and Vitelius who shortly reigned in the Roman
+[Ouespasianos](https://en.wikipedia.org/wiki/Vespasian)<!-- cite author="Rieuwerd Buitenwerf" title="The Book Three of the Sibylline Oracles and Its Social Setting" date="2003" location="Part 1" type="book" href="https://books.google.fi/books?id=Zqh8ZQZqnWYC" --> (lat. Vespasian) is the
+person referred here, because just before the verse 51 the oracle talks about
+the three kings Galba, Otho, and Vitelius who shortly reigned in the Roman
 Empire in 69AD. The next emperor in Rome was the son of the former,
 namely Titus, which first letter `T` is equal to 300 in Greek numerals.
 Continuation of the puzzle is made clear with the next three emperors:
@@ -610,3 +611,5 @@ Thus, the word for Rome ΡΩΜΗ meets the criteria of being having
 isopsephic value 948. It is repeated 1891 times in the Greek corpora but
 would have been very difficult to spot from the 495 different words if
 we didn't know what to search for.
+
+{% include 'footnotes.md' %}

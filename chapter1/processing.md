@@ -1,6 +1,6 @@
 ## Natural language processing
 
-Programmatical approach to solve the riddles requires huge Greek text corpora.
+Programmatical approach to solve the riddles requires a huge Greek text corpora.
 Bigger it is, the better. I will download and preprocess available open source
 Greek corpora, which is a quite daunting task for many reasons. Programming
 language of my choice is Python<!-- cite author="python.org" title="Python" date="" location="" type="website" href="http://python.org" --> for it has plenty of good and stable open source
@@ -9,14 +9,14 @@ scientific field and well oriented to the research projects.
 
 I have left the most of the overly technical details of these chapters
 for the enthusiasts to read straight from the commented code in
-[functions.py](https://git.io/vAS2Z)<!-- cite author="Marko Manninen" title="functions.py" date="2018" location="" type="website" href="https://git.io/vAS2Z" --> script. By collecting the large
-part of the used procedures to the separate script maintains this
+[functions.py](https://git.io/vAS2Z)<!-- cite author="Marko Manninen" title="functions.py" date="2018" location="" type="website" href="https://git.io/vAS2Z" --> script. By collecting
+the large part of the used procedures to the separate script maintains this
 document more concise too.
 
 In the end of the task of the first chapter, I'll have a word database
-containing hundreds of thousands of unique Greek words extracted from
-the naturally written language corpora. Then words can be further used
-in the riddle solver in the second chapter.
+containing hundreds of thousands of unique Greek words extracted from the
+naturally written language corpora. Then words can be further used in the riddle
+solver in the second chapter.
 
 <!-- note -->
 Note that rather than just reading, this, and the following chapters can also be

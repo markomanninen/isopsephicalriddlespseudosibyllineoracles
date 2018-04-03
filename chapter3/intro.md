@@ -1,1 +1,3 @@
 ## Introduction
+
+{% include 'footnotes.md' %}

@@ -2,9 +2,9 @@
 
 The first sub task is to get a big raw ancient Greek text to operate with. I
 have implemented an importer interface with Taqadum (tqdm)<!-- cite author="tqdm" title="Taqadum progress bar" date="" location="" type="website" href="https://github.com/tqdm/tqdm" -->
-library to the Perseus<!-- cite author="perseus.tufts.edu" title="Perseus digital library" date="" location="" type="website" href="http://www.perseus.tufts.edu/hopper/opensource/download" -->
-and the First1KGreek<!-- cite author="OpenGreekAndLatin" title="First 1000 Years of Greek" date="" location="" type="website" href="http://opengreekandlatin.github.io/First1KGreek" -->
-open source data sources in this chapter.
+library to the `Perseus`<!-- cite author="perseus.tufts.edu" title="Perseus digital library" date="" location="" type="website" href="http://www.perseus.tufts.edu/hopper/opensource/download" -->
+and the `OpenGreekAndLatin`<!-- cite author="OpenGreekAndLatin" title="First 1000 Years of Greek" date="" location="" type="website" href="http://opengreekandlatin.github.io/First1KGreek" -->
+ (shortly `First1K`) open source data sources in this chapter.
 
 I'm using my own [Abnum](https://github.com/markomanninen/abnum3)<!-- cite author="Marko Manninen" title="Abnum" date="" location="" type="website" href="https://github.com/markomanninen/abnum3" -->
 library to remove accents from the Greek words, remove non-alphabetical
@@ -42,7 +42,7 @@ Python 3.6.1 | Anaconda 4.4.0 (64-bit) | (default, May 11 2017, 13:25:24)
 ```
 
 Note that Python 3.4+ is required for all examples to work properly. To find out
-other ways of installing PyPI maintained libraries, please consult:
+other ways of installing `PyPI` maintained libraries, please consult:
 https://packaging.python.org/tutorials/installing-packages/
 
 {% include 'footnotes.md' %}

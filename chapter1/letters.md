@@ -7,7 +7,8 @@ the given sequence. Sequence in this case is the raw Greek text stripped
 from all special characters and spaces, and elements are the letters of
 the Greek alphabet.
 
-This will take some time to process too:
+Statistical variables (`ccontent` and `chars`) instantiated in the previous step
+are used here. This will take some time to process too:
 
 ```python
 from functions import Counter, DataFrame
@@ -25,11 +26,12 @@ df[2] = df[1].apply(lambda x: round(x*100/chars3, 2))
 c = df.sort_values(1, ascending=False)
 ```
 
-The first column is the letter, the second column is the count of the
-letter, and the third column is the percentage of the letter contra all
+The first column of the `DataFrame` is the letter, the second column is the count
+of the letter, and the third column is the percentage of the letter contra all
 letters.
 
 ```python
+# import html table print helper function
 from functions import display_side_by_side
 # show tables side by side to save some vertical space
 display_side_by_side(Perseus=a, First1K=b, Perseus_First1K=c)

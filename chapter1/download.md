@@ -1,7 +1,7 @@
 ## Downloading corpora
 
-I'm going to use `Perseus` and `OpenGreekAndLatin` corpora for the study by
-combining them into a single raw text file and unique words database.
+I'm going to use `Perseus` and `First1K` corpora for the study by combining them
+into a single raw text file and unique words database.
 
 The next code snippets will download hundreds of megabytes of Greek text to a
 local computer for quicker access. `tqdm` downloader requires a stable internet
@@ -15,6 +15,7 @@ in shell mode. ZIP files must then be renamed as `perseus.zip` and
 1\. Download packed ZIP files from their GitHub repositories:
 
 ```python
+# import downloader and zip file name variables
 from functions import download_with_indicator, perseus_zip_file, first1k_zip_file
 # download from perseus file source
 fs = "https://github.com/PerseusDL/canonical-greekLit/archive/master.zip"
@@ -36,6 +37,7 @@ Downloading: https://github.com/OpenGreekAndLatin/First1KGreek/archive/master.zi
 2\. Unzip (extract) files to the corresponding directories:
 
 ```python
+# import zip directory names and unzip function
 from functions import perseus_zip_dir, first1k_zip_dir, unzip
 # first argument is the zip source, second is the destination directory
 unzip(perseus_zip_file, perseus_zip_dir)
@@ -48,8 +50,9 @@ contain a lot of unnecessary files for the riddle solver which are skipped in
 this process.
 
 ```python
+# import temporary directory names and other helper functions
 from functions import copy_corpora, joinpaths, perseus_tmp_dir, first1k_tmp_dir
-# important Greek text files resides in the data directory of the repositories
+# Greek text files resides in the data directory of the repositories
 for item in [[joinpaths(perseus_zip_dir,
               ["canonical-greekLit-master", "data"]), perseus_tmp_dir],
              [joinpaths(first1k_zip_dir,
